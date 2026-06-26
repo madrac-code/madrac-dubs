@@ -142,8 +142,9 @@ def run_api(host: str = '127.0.0.1', port: int = 5000,
     os.environ['MADRAC_SKIP_VALIDATION'] = str(skip).lower()
     set_mode(resolved_mode, skip)
 
+    from waitress import serve
     logger.info("Starting API server on %s:%s (mode: %s)", host, port, resolved_mode)
-    app.run(host=host, port=port, debug=False, threaded=True, use_reloader=False)
+    serve(app, host=host, port=port, threads=8)
 
 
 if __name__ == '__main__':
