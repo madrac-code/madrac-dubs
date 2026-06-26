@@ -1,4 +1,6 @@
 """HTTP API for dubbing extension"""
+import asyncio
+import sys
 import uuid
 import json
 import os
@@ -6,6 +8,9 @@ import logging
 from pathlib import Path
 from threading import Thread
 from flask import Flask, request, jsonify
+
+if sys.platform == "win32":
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
 from .pipeline.models import DubbingJob, DubbingConfig, DubbingStatus
 from .pipeline.dubbing_pipeline import DubbingPipeline

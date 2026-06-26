@@ -1,7 +1,12 @@
 """Main entry point for madrac-dubbing"""
+import asyncio
 import sys
 import os
 import logging
+
+if sys.platform == "win32":
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
 import click
 from pathlib import Path
 
