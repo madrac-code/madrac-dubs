@@ -53,3 +53,10 @@ dist/
 build/
 *.spec.old
 *.egg-info
+
+*.exe
+ffmpeg*
+ffprobe*
+plugins/
+.cache/
+*.txt.bak
