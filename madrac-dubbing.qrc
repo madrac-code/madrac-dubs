@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="/">
+    <file>src/madrac_dubbing/ui/main_window.ui</file>
+  </qresource>
+</RCC>

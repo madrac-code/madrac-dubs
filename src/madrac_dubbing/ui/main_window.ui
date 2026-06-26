@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MADRAC Dubbing</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <!-- INTEGRATION STATUS BAR -->
+    <item>
+     <layout class="QHBoxLayout" name="integrationLayout">
+      <item>
+       <widget class="QLabel" name="labelIntegrationTitle">
+        <property name="text">
+         <string>MADRAC Modules:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelSubsStatus">
+        <property name="text">
+         <string>⚫ Subs</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelDubbingStatus">
+        <property name="text">
+         <string>🟢 Dubbing</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelAssistantStatus">
+        <property name="text">
+         <string>⚫ Assistant</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelRecognitionStatus">
+        <property name="text">
+         <string>⚫ Recognition</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelModeStatus">
+        <property name="text">
+         <string>Mode: standalone</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+
+    <!-- MAIN CONTENT: files + config side by side -->
+    <item>
+     <layout class="QHBoxLayout" name="mainContentLayout">
+      <!-- FILES PANEL -->
+      <item>
+       <widget class="QGroupBox" name="groupFiles">
+        <property name="title">
+         <string>Files</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="labelVideo">
+           <property name="text">
+            <string>Video File:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="videoLayout">
+           <item>
+            <widget class="QLineEdit" name="editVideoPath"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnBrowseVideo">
+             <property name="text">
+              <string>Browse</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelSrt">
+           <property name="text">
+            <string>SRT File:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="srtLayout">
+           <item>
+            <widget class="QLineEdit" name="editSrtPath"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnBrowseSrt">
+             <property name="text">
+              <string>Browse</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelOutput">
+           <property name="text">
+            <string>Output File:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="outputLayout">
+           <item>
+            <widget class="QLineEdit" name="editOutputPath"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnBrowseOutput">
+             <property name="text">
+              <string>Browse</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+
+       <!-- VOICE SETTINGS PANEL -->
+      <item>
+       <widget class="QGroupBox" name="groupVoice">
+        <property name="title">
+         <string>Voice Settings</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="labelLanguage">
+           <property name="text">
+            <string>Language:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboLanguage"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelVoice">
+           <property name="text">
+            <string>Voice:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboVoice"/>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="voiceBtnLayout">
+           <item>
+            <widget class="QPushButton" name="btnRefreshVoices">
+             <property name="text">
+              <string>Refresh Voices</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnPreviewVoice">
+             <property name="text">
+              <string>Preview Voice</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelStatusInfo">
+           <property name="text">
+            <string>Active Project: (none)</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+
+    <!-- LOG CONSOLE -->
+    <item>
+     <widget class="QGroupBox" name="groupLog">
+      <property name="title">
+       <string>Console</string>
+      </property>
+      <layout class="QVBoxLayout" name="logLayout">
+       <item>
+        <widget class="QTextEdit" name="textLog">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+
+    <!-- PROGRESS BAR -->
+    <item>
+     <widget class="QProgressBar" name="progressBar">
+      <property name="value">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+
+    <!-- START BUTTON -->
+    <item>
+     <widget class="QPushButton" name="btnStartDubbing">
+      <property name="text">
+       <string>Start Dubbing</string>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,288 @@
+{
+  "version": "1.0",
+  "timestamp": 1782462552.4260843,
+  "resources": {
+    "current_project": {
+      "resource_type": "current_project",
+      "path": "current_project/project.json",
+      "status": "missing",
+      "metadata": {
+        "description": "Active project metadata and configuration"
+      },
+      "created_at": 1782462552.416141,
+      "updated_at": 1782462552.4161413,
+      "version": "1.0"
+    },
+    "session_state": {
+      "resource_type": "session_state",
+      "path": "session_state.json",
+      "status": "missing",
+      "metadata": {
+        "description": "Current session state for crash recovery"
+      },
+      "created_at": 1782462552.416149,
+      "updated_at": 1782462552.416149,
+      "version": "1.0"
+    },
+    "parsed_subtitles": {
+      "resource_type": "parsed_subtitles",
+      "path": "subtitles/parsed/",
+      "status": "available",
+      "metadata": {
+        "provider": "madrac-subs",
+        "description": "Provided by MADRAC-SUBS: parsed_subtitles"
+      },
+      "created_at": 1782462552.4244475,
+      "updated_at": 1782462552.4244509,
+      "version": "1.0"
+    },
+    "subtitle_timeline": {
+      "resource_type": "subtitle_timeline",
+      "path": "subtitles/timeline.json",
+      "status": "available",
+      "metadata": {
+        "provider": "madrac-subs",
+        "description": "Provided by MADRAC-SUBS: subtitle_timeline"
+      },
+      "created_at": 1782462552.4245741,
+      "updated_at": 1782462552.4245772,
+      "version": "1.0"
+    },
+    "subtitle_segments": {
+      "resource_type": "subtitle_segments",
+      "path": "subtitles/segments/",
+      "status": "available",
+      "metadata": {
+        "provider": "madrac-subs",
+        "description": "Provided by MADRAC-SUBS: subtitle_segments"
+      },
+      "created_at": 1782462552.4247036,
+      "updated_at": 1782462552.4247062,
+      "version": "1.0"
+    },
+    "audio_segments": {
+      "resource_type": "audio_segments",
+      "path": "audio_segments/",
+      "status": "available",
+      "metadata": {
+        "provider": "madrac-subs",
+        "description": "Provided by MADRAC-SUBS: audio_segments"
+      },
+      "created_at": 1782462552.4248266,
+      "updated_at": 1782462552.4248295,
+      "version": "1.0"
+    },
+    "audio_stems": {
+      "resource_type": "audio_stems",
+      "path": "audio/stems/",
+      "status": "missing",
+      "metadata": {
+        "description": "AI-separated audio stems (vocals, background)"
+      },
+      "created_at": 1782462552.4161603,
+      "updated_at": 1782462552.4161603,
+      "version": "1.0"
+    },
+    "extracted_audio": {
+      "resource_type": "extracted_audio",
+      "path": "audio/extracted/",
+      "status": "available",
+      "metadata": {
+        "provider": "madrac-subs",
+        "description": "Provided by MADRAC-SUBS: extracted_audio"
+      },
+      "created_at": 1782462552.4249496,
+      "updated_at": 1782462552.4249525,
+      "version": "1.0"
+    },
+    "reduced_vocals": {
+      "resource_type": "reduced_vocals",
+      "path": "audio/reduced_vocals/",
+      "status": "available",
+      "metadata": {
+        "provider": "madrac-subs",
+        "description": "Provided by MADRAC-SUBS: reduced_vocals"
+      },
+      "created_at": 1782462552.4250724,
+      "updated_at": 1782462552.4250755,
+      "version": "1.0"
+    },
+    "tts_segments": {
+      "resource_type": "tts_segments",
+      "path": "tts/segments/",
+      "status": "available",
+      "metadata": {
+        "provider": "madrac-dubbing",
+        "description": "Provided by MADRAC-DUBBING: tts_segments"
+      },
+      "created_at": 1782462552.4234989,
+      "updated_at": 1782462552.4235058,
+      "version": "1.0"
+    },
+    "mixed_audio": {
+      "resource_type": "mixed_audio",
+      "path": "audio/mixed/",
+      "status": "available",
+      "metadata": {
+        "provider": "madrac-dubbing",
+        "description": "Provided by MADRAC-DUBBING: mixed_audio"
+      },
+      "created_at": 1782462552.4236348,
+      "updated_at": 1782462552.4236395,
+      "version": "1.0"
+    },
+    "whisper_results": {
+      "resource_type": "whisper_results",
+      "path": "whisper/results/",
+      "status": "available",
+      "metadata": {
+        "provider": "madrac-subs",
+        "description": "Provided by MADRAC-SUBS: whisper_results"
+      },
+      "created_at": 1782462552.4252012,
+      "updated_at": 1782462552.4252043,
+      "version": "1.0"
+    },
+    "transcription_segments": {
+      "resource_type": "transcription_segments",
+      "path": "whisper/segments/",
+      "status": "available",
+      "metadata": {
+        "provider": "madrac-subs",
+        "description": "Provided by MADRAC-SUBS: transcription_segments"
+      },
+      "created_at": 1782462552.4253268,
+      "updated_at": 1782462552.4253297,
+      "version": "1.0"
+    },
+    "translation_cache": {
+      "resource_type": "translation_cache",
+      "path": "translations/cache/",
+      "status": "available",
+      "metadata": {
+        "provider": "madrac-subs",
+        "description": "Provided by MADRAC-SUBS: translation_cache"
+      },
+      "created_at": 1782462552.4254494,
+      "updated_at": 1782462552.4254522,
+      "version": "1.0"
+    },
+    "translated_segments": {
+      "resource_type": "translated_segments",
+      "path": "translations/segments/",
+      "status": "available",
+      "metadata": {
+        "provider": "madrac-subs",
+        "description": "Provided by MADRAC-SUBS: translated_segments"
+      },
+      "created_at": 1782462552.4255714,
+      "updated_at": 1782462552.4255738,
+      "version": "1.0"
+    },
+    "tts_cache": {
+      "resource_type": "tts_cache",
+      "path": "tts/cache/",
+      "status": "available",
+      "metadata": {
+        "provider": "madrac-dubbing",
+        "description": "Provided by MADRAC-DUBBING: tts_cache"
+      },
+      "created_at": 1782462552.423902,
+      "updated_at": 1782462552.4239051,
+      "version": "1.0"
+    },
+    "voice_profiles": {
+      "resource_type": "voice_profiles",
+      "path": "tts/voices/",
+      "status": "available",
+      "metadata": {
+        "provider": "madrac-dubbing",
+        "description": "Provided by MADRAC-DUBBING: voice_profiles"
+      },
+      "created_at": 1782462552.4240248,
+      "updated_at": 1782462552.4240282,
+      "version": "1.0"
+    },
+    "dubbing_jobs": {
+      "resource_type": "dubbing_jobs",
+      "path": "dubbing/jobs/",
+      "status": "available",
+      "metadata": {
+        "provider": "madrac-dubbing",
+        "description": "Provided by MADRAC-DUBBING: dubbing_jobs"
+      },
+      "created_at": 1782462552.4237757,
+      "updated_at": 1782462552.4237795,
+      "version": "1.0"
+    },
+    "playback_state": {
+      "resource_type": "playback_state",
+      "path": "playback/state/current_state.json",
+      "status": "available",
+      "metadata": {
+        "provider": "madrac-subs",
+        "description": "Provided by MADRAC-SUBS: playback_state"
+      },
+      "created_at": 1782462552.4256983,
+      "updated_at": 1782462552.4257011,
+      "version": "1.0"
+    },
+    "playback_position": {
+      "resource_type": "playback_position",
+      "path": "playback/position.json",
+      "status": "available",
+      "metadata": {
+        "provider": "madrac-subs",
+        "description": "Provided by MADRAC-SUBS: playback_position"
+      },
+      "created_at": 1782462552.4258223,
+      "updated_at": 1782462552.425825,
+      "version": "1.0"
+    },
+    "temp_assets": {
+      "resource_type": "temp_assets",
+      "path": "temp/",
+      "status": "missing",
+      "metadata": {
+        "description": "Temporary working files"
+      },
+      "created_at": 1782462552.416181,
+      "updated_at": 1782462552.4161813,
+      "version": "1.0"
+    },
+    "model_weights": {
+      "resource_type": "model_weights",
+      "path": "models/",
+      "status": "available",
+      "metadata": {
+        "provider": "madrac-dubbing",
+        "description": "Provided by MADRAC-DUBBING: model_weights"
+      },
+      "created_at": 1782462552.4241507,
+      "updated_at": 1782462552.4241536,
+      "version": "1.0"
+    },
+    "user_preferences": {
+      "resource_type": "user_preferences",
+      "path": "user/preferences.json",
+      "status": "missing",
+      "metadata": {
+        "description": "User preferences and settings"
+      },
+      "created_at": 1782462552.4161844,
+      "updated_at": 1782462552.4161844,
+      "version": "1.0"
+    },
+    "voice_preferences": {
+      "resource_type": "voice_preferences",
+      "path": "user/voices.json",
+      "status": "missing",
+      "metadata": {
+        "description": "User voice selection preferences"
+      },
+      "created_at": 1782462552.4161856,
+      "updated_at": 1782462552.4161856,
+      "version": "1.0"
+    }
+  }
+}
