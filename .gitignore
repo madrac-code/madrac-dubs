@@ -66,3 +66,6 @@ ffmpeg*
 ffprobe*
 plugins/
 .cache/
+
+venv/
+.venv/
