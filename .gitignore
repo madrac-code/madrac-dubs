@@ -60,3 +60,9 @@ ffprobe*
 plugins/
 .cache/
 *.txt.bak
+
+*.exe
+ffmpeg*
+ffprobe*
+plugins/
+.cache/
