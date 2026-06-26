@@ -143,7 +143,7 @@ def run_api(host: str = '127.0.0.1', port: int = 5000,
     set_mode(resolved_mode, skip)
 
     logger.info("Starting API server on %s:%s (mode: %s)", host, port, resolved_mode)
-    app.run(host=host, port=port, debug=False, use_reloader=False)
+    app.run(host=host, port=port, debug=False, threaded=True, use_reloader=False)
 
 
 if __name__ == '__main__':
